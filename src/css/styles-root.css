@@ -1,0 +1,21 @@
+:root {
+  --c-text-main: #111111;
+  --c-text-secondary: #ffffff;
+  --c-accent: #fd9222;
+  --bgc-body: #fafafa;
+  --bgc-dark: #1e1823;
+  --bgc-light-button: #fcf1e0;
+  --bgc-slider-dots: rgba(17, 17, 17, 0.1);
+
+  /* Анімація */
+  /* для використання у правилі прописати transition: var(--transition-brd); і для цього правила застосується анімування зміни бордеру, ці параметри анімація з 7 дз */
+  --transition-brd: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-c: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bgc: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-transform: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-box-shadow: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-opacity: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-visibility: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-stroke: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
