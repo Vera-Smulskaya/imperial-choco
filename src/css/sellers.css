@@ -1,0 +1,137 @@
+.sellers {
+  padding-top: 128px;
+}
+.sellers__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 32px;
+}
+
+.sellers__title__action {
+  color: var(--c-accent);
+}
+
+.sellers__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sellers__text__action {
+  margin-top: 20px;
+  margin-bottom: 32px;
+
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: var(--c-text-main);
+}
+.sellers__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  color: var(--c-text-secondary);
+  background-color: var(--c-accent);
+  border: transparent;
+  border-radius: 100px;
+  padding: 12px 28px;
+
+  height: 41px;
+  margin-top: 20px;
+  transition: var(--transition-c),
+   var(--transition-bgc);
+}
+
+.sellers__button:hover,
+.sellers__button:focus {
+  color: var(--c-accent);
+  background-color: var(--bgc-light-button);
+}
+@media screen and (min-width: 375px) and (max-width: 767.98px) {
+  .sellers__text__action {
+    width: 306px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sellers__title {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.67;
+  }
+
+  .sellers__text__action {
+    display: none;
+  }
+
+  .sellers__text {
+    display: block;
+    max-width: 306px;
+
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    color: var(--c-text-main);
+  }
+
+  .sellers__list {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 16px;
+  }
+
+  .sellers__item {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+
+  .sellers__item__info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+  }
+
+  .sellers__button {
+    font-size: 18px;
+    line-height: 1.22;
+
+    height: 50px;
+    margin: 0;
+    padding: 14px 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sellers__item {
+    flex-basis: calc((100% - 32px) / 3);
+  }
+
+  .sellers__item__action {
+    display: block;
+  }
+  .sellers__text {
+    max-width: 407px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .sellers__item__action {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .sellers__text {
+    display: none;
+  }
+}
