@@ -1,0 +1,108 @@
+.subscribe{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+@media screen and (max-width: 767px) {
+    .subscribe {
+    background-image: url(/images/subcribe/subcribe_bg_mobile.jpg);
+    padding-top: 62px;
+    padding-bottom: 63px;
+}
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px){
+    .subscribe {
+            background-image: url(/images/subcribe/subcribe_bg_mobile@2x.jpg);
+        }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+.subscribe {
+        background-image: url(/images/subcribe/subcribe_bg_tablet.jpg);
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px)and (max-width: 1199px),
+screen and (min-resolution: 192dpi) and (min-width: 768px)and (max-width: 1199px),
+screen and (min-resolution: 2dppx) and (min-width: 768px)and (max-width: 1199px) {
+.subscribe {
+        background-image: url(/images/subcribe/subcribe_bg_tablet@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .subscribe {
+            background-image: url(/images/subcribe/subcribe_bg_desktop.jpg);
+            background-size: 1200px auto;
+        }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px){
+        .subscribe {
+                background-image: url(/images/subcribe/subcribe_bg_desktop@2x.jpg);
+                
+            }
+}
+
+.subscribe__title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--c-text-secondary);
+    margin-bottom: 24px;
+    max-width: 291px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+.subscribe__title{
+    font-size: 24px;
+    line-height: 1.17;
+    max-width: 378px;
+}
+}
+
+.subscribe__text {
+    font-style: normal;
+    line-height: 1.29;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: var(--c-text-secondary);
+    margin-bottom: 24px;
+}
+
+.subscribe__btn {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: var(--c-text-secondary);
+    margin: auto;
+    padding: 12px 28px;
+    width: 128px;
+    height: 41px;
+    background: var(--c-accent);
+    border: none;
+    border-radius: 100px;
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+.subscribe__btn{
+    font-size: 18px;
+    line-height: 1.22;
+    padding: 14px 40px;
+    width: 172px;
+    height: 50px;
+}
+}
