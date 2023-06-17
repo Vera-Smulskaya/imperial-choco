@@ -114,6 +114,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px){
     border: none;
     border-radius: 100px;
     display: block;
+    transition: var(--transition-c), var(--transition-bgc);
 }
 
 @media screen and (min-width: 768px) {
