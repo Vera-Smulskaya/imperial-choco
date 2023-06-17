@@ -63,7 +63,7 @@
 }
 
 @media screen and (min-width: 319px) {
-  .container {
+  .made .container {
     width: 320px;
   }
 
@@ -82,7 +82,7 @@
 }
 
 @media screen and (min-width: 375px) {
-  .container {
+  .made .container {
     width: 375px;
   }
 
@@ -111,7 +111,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .made .container {
     width: 768px;
     padding: 0 77px;
   }
@@ -145,7 +145,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .container {
+  .made .container {
     width: 1200px;
     padding-left: 32px;
     padding-right: 32px;
