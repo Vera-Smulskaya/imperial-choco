@@ -12,7 +12,7 @@
         padding-top: 62px;
         padding-bottom: 63px;
 }
-    .container{
+    .subscribe>.container{
         max-width: 335px;
         padding-left: 4.5px;
         padding-right: 4.5px;
@@ -30,7 +30,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767.98px){
     .subscribe {
         background-image: url(/images/subcribe/subcribe_bg_tablet.jpg);
     }
-    .container {
+    .subscribe>.container {
         max-width: 467px;
         padding-left: 0;
         padding-right: 0;
@@ -50,7 +50,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px)and (max-width: 1199.98
             background-image: url(/images/subcribe/subcribe_bg_desktop.jpg);
             background-size: 1200px auto;
         }
-    .container {
+    .subscribe>.container {
         max-width: 467px;
         padding-left: 0;
         padding-right: 0;
