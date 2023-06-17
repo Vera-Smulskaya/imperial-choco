@@ -80,7 +80,13 @@
     margin-top: 20px;
   }
 }
-
+@media screen and (max-width: 374.98px) {
+  .made__title {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+  }
+}
 @media screen and (min-width: 375px) {
   .made .container {
     width: 375px;
