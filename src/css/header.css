@@ -1,0 +1,228 @@
+.page-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-div{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.logo{
+            font-family: 'Montserrat';
+            src: url('../fonts/montserrat-bolditalic.woff2') format('woff2');
+            font-weight: 700;
+            color: var(--c-text-main);
+            display: block;
+            line-height: 1.29;
+            letter-spacing: -0.03em;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo-italic{
+        font-style: italic;
+}
+
+.burger-button{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+}
+
+/* .burger-button:hover>.burger-svg,
+.burger-button:focus> .butger-svg{
+    stroke: orange;
+} */
+
+.header-nav-list{
+    display: none;
+}
+
+.header-icon-list{
+    display: none;
+}
+
+.burger-svg{
+    width: 28px;
+    height: 28px;
+    stroke: black;
+}
+
+.head-mobile-menu{
+    width: 124px;
+    height: 100%;
+    max-height: 812px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* opacity: 0;
+    visibility: hidden;
+    pointer-events: none; */
+    padding-top: 136px;
+    padding-right: 46px;
+    padding-left: 50px;
+    background-color: #1E1823;
+}
+
+.head-menu-close{
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head-menu-close-buttom{
+    stroke: white;
+    width: 28px;
+    height: 28px;
+    transition: width ease-out 800ms, stroke ease-out 800ms, height ease-out 800ms
+}
+
+.head-menu-close:active>.head-menu-close-buttom{
+    stroke: orange;
+    width:40px;
+    height: 40px; 
+}
+
+.head-menu-list{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.head-menu-item{
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-medium.woff2') format('woff2');
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    transition: color ease-in 500ms, font-weight ease-in 500ms;
+    position: relative;
+}
+
+.head-menu-item::after{
+    content: "";
+    color: orange;
+    width: 24px;
+    height: 0px;
+    border: 1px solid #FD9222;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.head-menu-item::after:focus,
+.head-menu-item::after:hover{
+    opacity: 1;
+}
+
+.head-menu-item:hover,
+.head-menu-item:focus{
+    color:orange;
+    font-weight: 600;
+}
+
+.header-menu-icon-list{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    left: 20px;
+    bottom: 20px;
+    position: absolute;
+}
+
+.header-menu-icon:hover .header-menu-icon-item,
+.header-menu-icon:focus .header-menu-icon-item{
+    stroke: orange;
+}
+
+.header-menu-icon-item{
+    fill: none;
+    stroke: white;
+    transition: stroke ease-out 500ms;
+}
+
+@media screen and (min-width: 768px) {
+.logo {
+    text-shadow: none;
+}
+
+.burger-svg {
+    width: 32px;
+    height: 32px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+
+    .header-nav{
+        display: flex;
+        align-items: center;
+    }
+
+    .logo{
+        margin-right: 188px;
+        font-family: 'Montserrat';
+        src: url('../fonts/montserrat-bold.woff2') format('woff2');
+        font-weight: 700;
+        line-height: 1.11;
+    }
+
+    .page-header{
+        
+        align-items: center;
+    }
+
+    .burger-button{
+        display: none;
+    }
+
+    .header-nav-list{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .header-list-item{
+                font-family: 'Montserrat';
+                src: url('../fonts/montserrat-medium.woff2') format('woff2');
+                font-weight: 500;
+                color: var(--c-text-main);
+    }
+
+    .header-icon-list{
+        margin-left: auto;
+        display: flex;
+        gap: 18px;
+        align-items: center;
+    }
+
+        .header-icon-list-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        fill: transparent;
+        stroke: black;
+        cursor: pointer;
+        }
+
+        .header-icon-list-item:hover,
+        .header-icon-list-item:focus{
+            stroke: var(--c-accent);
+        }
+    }
