@@ -5,8 +5,11 @@
 }
 
 .hero_inner {
-    background: var(--hero-bgc);
-    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/images/hero-mobile.jpg);
+    background: #988d8d;
+    background-image: linear-gradient(180deg,
+            rgba(17, 17, 17, 0) 0%,
+            rgba(17, 17, 17, 0.4) 100%),
+        url(/images/hero/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -16,7 +19,6 @@
     padding-right: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: center;
     border-radius: 30px;
 }
 
@@ -25,7 +27,10 @@ screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero_inner {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero-mobile@2x.jpg);
+        background-image: linear-gradient(180deg,
+                rgba(17, 17, 17, 0) 0%,
+                rgba(17, 17, 17, 0.4) 100%),
+            url(/images/hero/hero-mobile@2x.jpg);
     }
 }
 
@@ -36,6 +41,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     line-height: 1.2;
     font-size: 20px;
     font-weight: 500;
+    max-width: 290px;
 }
 
 .hero_action {
@@ -60,6 +66,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     font-weight: 600;
     line-height: 1.2;
     color: var(--c-text-secondary);
+    transition: var(--transition-brd), var(--transition-c), var(--transition-bgc);
 }
 
 .hero_buy_btn {
@@ -87,6 +94,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 .hero_scroll {
     font-size: 12px;
+    display: flex;
+    align-items: center;
 }
 
 .hero_scroll_btn {
@@ -97,12 +106,20 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 .hero_scroll_icon {
     fill: currentColor;
+    width: 15px;
+    width: 15px;
 }
 
 .hero_icon-block {
     color: var(--c-accent);
     border-radius: 50%;
     background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    transition: var(--transition-brd), var(--transition-c), var(--transition-bgc);
 }
 
 .hero_text {
@@ -110,11 +127,13 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: -0.03em;
+    transition: var(--transition-c);
+    font-weight: 500;
 }
 
 .hero_scroll_btn:hover .hero_text,
 .hero_scroll_btn:focus .hero_text {
-    color: var(--hero-c-text-h-f);
+    color: var(--c-accent);
 }
 
 .hero_scroll_btn:hover .hero_icon-block,
@@ -127,7 +146,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 @media screen and (min-width: 768px) {
     .hero {
-       padding-bottom: 50px;
+        padding-bottom: 50px;
     }
 
     .hero_inner {
@@ -135,7 +154,10 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         padding-bottom: 40px;
         padding-left: 40px;
         padding-right: 40px;
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/images/hero-tablet.jpg);
+        background-image: linear-gradient(180deg,
+                rgba(17, 17, 17, 0) 0%,
+                rgba(17, 17, 17, 0.4) 100%),
+            url(/images/hero/hero-tablet.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -143,62 +165,86 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
         .hero_inner {
-            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/images/hero-tablet@2x.jpg);
+            background-image: linear-gradient(180deg,
+                    rgba(17, 17, 17, 0) 0%,
+                    rgba(17, 17, 17, 0.4) 100%),
+                url(/images/hero/hero-tablet@2x.jpg);
         }
     }
 
     .hero_title {
         font-size: 28px;
-        min-width: 484px;
+        max-width: 484px;
     }
 
-.hero_action {
-    flex-direction: row;
-    justify-content: space-between;
-}
-    
-.hero_buttons_block {
-    margin-bottom: 0;
-}
+    .hero_action {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-.hero_scroll {
-    font-size: 14px;
-    line-height: 1.28;
-}
+    .hero_buttons_block {
+        margin-bottom: 0;
+    }
 
-.hero_scroll_btn {
-    gap: 14px;
-    align-items: center;
-}
+    .hero_button {
+        padding-top: 14px;
+        padding-left: 40px;
+        padding-bottom: 14px;
+        padding-right: 40px;
+    }
 
-.hero_text {
-    font-size: 14px;
-    line-height: 1.28;
-}
+    .hero_icon-block {
+        width: 38px;
+        height: 38px;
+    }
+
+    .hero_scroll_icon {
+        width: 22px;
+        width: 22px;
+    }
+
+    .hero_scroll {
+        font-size: 14px;
+        line-height: 1.28;
+    }
+
+    .hero_scroll_btn {
+        gap: 14px;
+        align-items: center;
+    }
+
+    .hero_text {
+        font-size: 14px;
+        line-height: 1.28;
+    }
 }
 
 /*---Hero-desktop*/
 
 @media screen and (min-width: 1200px) {
+    .hero {
+        padding-bottom: 72px;
+    }
 
-.hero {
-    padding-bottom: 72px;
-}
-
-.hero_inner {
-    padding-top: 381px;
-    padding-bottom: 40px;
-    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/images/hero-desktop.jpg);
-    max-width: 1200px;
-}
+    .hero_inner {
+        padding-top: 381px;
+        padding-bottom: 40px;
+        background-image: linear-gradient(180deg,
+                rgba(17, 17, 17, 0) 0%,
+                rgba(17, 17, 17, 0.4) 100%),
+            url(/images/hero/hero-desktop.jpg);
+        max-width: 1200px;
+    }
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
     screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
     screen and (min-resolution: 192dpi) and (min-width: 1200px),
     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         .hero_inner {
-            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/images/hero-desktop@2x.jpg);
+            background-image: linear-gradient(180deg,
+                    rgba(17, 17, 17, 0) 0%,
+                    rgba(17, 17, 17, 0.4) 100%),
+                url(/images/hero/hero-desktop@2x.jpg);
         }
     }
-
 }
