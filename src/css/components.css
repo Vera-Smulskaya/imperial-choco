@@ -13,6 +13,9 @@
     }
 }
 
+.component-bgc-white {
+    background-color: #fff;
+}
 .components__title {
     margin-bottom: 24px;
     max-width:283px;
