@@ -4,19 +4,32 @@
       <use href="./images/sprite.svg#icon-close-modal"></use>
     </svg>
   </button>
-  <img
-    class="subscribe-modal__img"
-    srcset="
-      ./images/subcribe/subscribe-modal-img.jpg    1x,
-      ./images/subcribe/subscribe-modal-img@2x.jpg 2x
-    "
-    src="./images/subcribe/subscribe-modal-img.jpg"
-    alt="chocolate"
-    width="100%"
-  />
+  <picture>
+    <source
+      media="(max-width: 767.98px)"
+      srcset="
+        ./images/subcribe/subscribe-modal-img-mobile.jpg    1x,
+        ./images/subcribe/subscribe-modal-img-mobile@2x.jpg 2x
+      "
+    />
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ./images/subcribe/subscribe-modal-img.jpg    1x,
+        ./images/subcribe/subscribe-modal-img@2x.jpg 2x
+      "
+    />
+    <img
+      class="subscribe-modal__img"
+      src="./images/subcribe/subscribe-modal-img.jpg"
+      alt="chocolate"
+      width="100%"
+    />
+  </picture>
+
   <div class="subscribe-modal__content-wrapper">
     <h1 class="subscribe-modal__title">
-      Explore our
+      Explore our <br />
       <span class="subscribe-modal__title-span">new chocolate</span> first!
     </h1>
     <form class="subscribe-modal__form">
@@ -24,14 +37,14 @@
         class="subscribe-modal__form-input"
         pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
         type="email"
-        S
         name="user-email"
         placeholder="Enter your email"
         required
       />
 
       <button type="submit" class="subscribe-modal__form-submit js-modal-close">
-        Subscribe
+        <span class="subscribe-modal__form-submit-text">Subscribe</span>
+        <span class="subscribe-modal__form-submit-text-mobil">Submit</span>
       </button>
     </form>
   </div>
