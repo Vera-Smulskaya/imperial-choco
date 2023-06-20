@@ -102,6 +102,11 @@
     background-color: var(--bgc-body);
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 100px;
+    transition: var(--transition-brd);
+}
+.sellers-modal__button:hover,
+.sellers-modal__button:focus {
+    border-color: var(--c-accent);
 }
 
 .sellers-modal__form-desc {
@@ -247,8 +252,7 @@
     background-color: var(--c-accent);
     border-radius: 100px;
     border: transparent;
-    transition: color var(--transition-dur-func),
-        background-color var(--transition-dur-func);
+    transition: var(--transition-c), var(--transition-bgc);
 }
 
 .sellers-modal__form-submit:hover,
