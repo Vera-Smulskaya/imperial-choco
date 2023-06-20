@@ -3,7 +3,7 @@
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: var(--bgc-body);
   z-index: 20;
 }
 .page-header {
@@ -63,7 +63,6 @@
 .head-mobile-menu {
   width: 220px;
   height: 100%;
-  max-height: 812px;
   position: fixed;
   top: 0;
   right: 0;
@@ -120,34 +119,31 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.02em;
+  display: block;
   color: var(--c-text-secondary);
-  transition: var(--transition-c),
-    font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transition-c);
   position: relative;
 }
-
-.head-menu-list li:hover .head-menu-item::after,
-.head-menu-list li:focus .head-menu-item::after {
-  opacity: 1;
-}
-
 .head-menu-item::after {
   content: '';
-  color: var(--c-accent);
-  width: 24px;
-  height: 1px;
-  border: 1px solid #fd9222;
+  background-color: transparent;
+  transition: var(--transition-bgc);
+}
+.head-menu-item:hover::after,
+.head-menu-item:focus::after {
+  content: '';
   position: absolute;
-  left: 0;
+  display: block;
+  width: 24px;
+  height: 2px;
   bottom: -8px;
-  opacity: 0;
-  transition: var(--transition-opacity);
+  left: 0;
+  background-color: var(--c-accent);
 }
 
 .head-menu-item:hover,
 .head-menu-item:focus {
   color: var(--c-accent);
-  font-weight: 600;
 }
 
 .header-menu-icon-list {
@@ -184,7 +180,6 @@
 
   .head-mobile-menu {
     width: 290px;
-    max-height: 1024px;
     padding-top: 156px;
     padding-right: 15px;
     padding-left: 85px;
@@ -234,6 +229,8 @@
   .header-list-item {
     font-weight: 500;
     color: var(--c-text-main);
+    display: block;
+    position: relative;
     padding-top: 30px;
     padding-bottom: 30px;
     letter-spacing: -0.02em;
@@ -242,6 +239,22 @@
   .header-list-item:hover,
   .header-list-item:focus {
     color: var(--c-accent);
+  }
+  .header-list-item::after {
+    content: '';
+    background-color: transparent;
+    transition: var(--transition-bgc);
+  }
+  .header-list-item:hover::after,
+  .header-list-item:focus::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 25px;
+    left: 0;
+    background-color: var(--c-accent);
   }
 
   .header-icon-list {
