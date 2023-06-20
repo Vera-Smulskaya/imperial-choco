@@ -109,7 +109,7 @@
   .footer__container {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 50px;
+    margin-bottom: 74px;
   }
 
   .footer__contactsmediacontainer {
@@ -178,6 +178,6 @@
   }
 
   .footer__container {
-    padding-bottom: 58px;
+    margin-bottom: 82px;
   }
 }

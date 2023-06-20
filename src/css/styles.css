@@ -13,6 +13,10 @@
 @import url('./reviews.css');
 @import url('./subscribe.css');
 @import url('./footer.css');
+@import url('./basic-modal-styles.css');
+@import url('./sellers-modal.css');
+@import url('./reviews-modal.css');
+@import url('./subscribe-modal.css');
 
 /* це краще не чіпати, у рута є якісь залежності у JS */
 /* це краще не чіпати, у рута є якісь залежності у JS */
