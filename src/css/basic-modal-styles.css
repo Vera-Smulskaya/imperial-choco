@@ -1,6 +1,5 @@
 .overlay {
   opacity: 0;
-  overflow: scroll;
   visibility: hidden;
   position: fixed;
   top: 0;
@@ -13,11 +12,7 @@
 }
 .modal {
   opacity: 0;
-  overflow: scroll;
   visibility: hidden;
-  width: 95%;
-  height: 95%;
-  max-width: 500px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -25,8 +20,6 @@
   z-index: 30;
 
   text-align: center;
-  padding: 30px;
-  border-radius: 3px;
   transition: 0.3s all;
 }
 .modal.active,
