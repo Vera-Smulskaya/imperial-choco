@@ -1,7 +1,7 @@
 .sellers-modal__inner {
     overflow-y: scroll;
     width: 311px;
-    height: 100%;
+    height: 95%;
     
     padding: 32px 24px;
     background-color: var(--bgc-body);
