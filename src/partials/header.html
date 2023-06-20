@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../css/header.css">
-</head>
-<body>
 <header class="header">
   <!-------------------------------------------------- HEADER 1----------------------------------------------------------->
   <div class="container page-header">
     <nav class="header-nav">
-      <a href="../index.html" class="logo">
-        <div class="logo-div">
-          <span class="logo-text"><span class="logo-italic">SIMPLY&nbsp;</span>CHOCOLATE</span>
+      <a href="../index.html" class="head-logo">
+        <div class="head-logo-div">
+          <span class="head-logo-text"><span class="head-logo-italic">SIMPLY&nbsp;</span>CHOCOLATE</span>
           <svg class="logo-icon" width="21" height="21">
             <use href="../images/sprite.svg#icon-logo"></use>
           </svg>
@@ -41,7 +32,7 @@
         <li>
           <a class="header-icon-list-item" href="#">
             <svg class="header-links" width="24" height="24">
-              <use href="../images/sprite.svg#icon-instagram-2"></use>
+              <use href="../images/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -53,7 +44,7 @@
           </a>
         </li>
       </ul>
-  <button type="button" class="burger-button">
+  <button class="burger-button js-open-menu" type="button" >
     <svg class="burger-svg">
       <use href="../images/sprite.svg#icon-burger"></use>
     </svg>
@@ -61,8 +52,8 @@
   </div>
   <!------------------------------------------------- /HEADER 1----------------------------------------------------------->
   <!-------------------------------------------------- HEADER 2----------------------------------------------------------->
-  <div class="container head-mobile-menu">
-    <button class="head-menu-close" type="button">
+  <div class="head-mobile-menu js-menu-container">
+    <button class="head-menu-close js-close-menu" type="button">
       <svg class="head-menu-close-buttom">
         <use href="../images/sprite.svg#icon-close-modal"></use>
       </svg>
@@ -92,8 +83,4 @@
     </ul>
   </div>
 </header>
-</body>
-</html>
-
-
-
+<script src="../js/mobile-modal.js"></script>
