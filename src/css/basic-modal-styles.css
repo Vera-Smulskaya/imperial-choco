@@ -10,6 +10,7 @@
   z-index: 20;
   transition: 0.3s all;
 }
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -21,6 +22,7 @@
   text-align: center;
   transition: 0.3s all;
 }
+
 .modal.active,
 .overlay.active {
   opacity: 1;

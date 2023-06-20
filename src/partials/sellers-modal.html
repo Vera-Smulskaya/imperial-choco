@@ -1,0 +1,110 @@
+<div class="sellers-modal container">
+    <div class="sellers-modal__inner modal" data-modal="1">
+        <button class="sellers-modal__close js-modal-close" type="button">
+            <svg class="sellers-modal__icon">
+                <use href="./images/sprite.svg#icon-close-modal"></use>
+            </svg>
+        </button>
+        <h2 class="sellers-modal__title">
+            <span class="sellers-modal__title-action">BUY</span>&nbsp;NOW
+        </h2>
+        <ul class="sellers-modal__cards-list list">
+            <li class="sellers-modal__cards-item">
+                <picture class="sellers-modal__picture">
+                    <source srcset="
+                      ./images/sellers-modal/chocolate-desktop.jpg    1x,
+                      ./images/sellers-modal/chocolate-desktop@2x.jpg 2x
+                    " media="(min-width: 768px)" />
+                    <source srcset="
+                      ./images/sellers-modal/chocolate-mobil.jpg    1x,
+                      ./images/sellers-modal/chocolate-mobil@2x.jpg 2x
+                    " media="(max-width: 767px)" />
+                    <img class="sellers-modal__img" src="./images/sellers-modal/chocolate-mobil.jpg" alt="chocolate" />
+                </picture>
+                <button class="sellers-modal__button" type="button">100 g</button>
+            </li>
+            <li class="sellers-modal__cards-item">
+                <picture class="sellers-modal__picture">
+                    <source srcset="
+                      ./images/sellers-modal/praline-desktop.jpg    1x,
+                      ./images/sellers-modal/praline-desktop@2x.jpg 2x
+                    " media="(min-width: 768px)" />
+                    <source srcset="
+                      ./images/sellers-modal/praline-mobil.jpg    1x,
+                      ./images/sellers-modal/praline-mobil@2x.jpg 2x
+                    " media="(max-width: 767px)" />
+                    <img class="sellers-modal__img" src="./images/sellers-modal/praline-mobil.jpg"
+                        alt="chocolate praline" />
+                </picture>
+                <button class="sellers-modal__button" type="button">200 g</button>
+            </li>
+            <li class="sellers-modal__cards-item">
+                <picture class="sellers-modal__picture">
+                    <source srcset="
+                      ./images/sellers-modal/transparent-desktop.jpg    1x,
+                      ./images/sellers-modal/transparent-desktop@2x.jpg 2x
+                    " media="(min-width: 768px)" />
+                    <source srcset="
+                      ./images/sellers-modal/transparent-mobil.jpg    1x,
+                      ./images/sellers-modal/transparent-mobil@2x.jpg 2x
+                    " media="(max-width: 767px)" />
+                    <img class="sellers-modal__img" src="./images/sellers-modal/transparent-mobil.jpg"
+                        alt="transparent chocolate" />
+                </picture>
+                <button class="sellers-modal__button" type="button">300 g</button>
+            </li>
+        </ul>
+        <form class="sellers-modal__form">
+            <div class="sellers-modal__form-container">
+                <div class="sellers-modal__field">
+                    <p class="sellers-modal__form-desc">Personal information</p>
+                    <div class="sellers-modal__container-name">
+                        <input class="sellers-modal__input sellers-modal__input-name" name="user-name" type="text"
+                            placeholder="Name" required pattern="[a-zA-Zа-яА-Я]+" minlength="2" />
+                        <input id="user-name" class="sellers-modal__input" name="user-name" type="text"
+                            placeholder="Surname" required pattern="[a-zA-Zа-яА-Я]+" minlength="2" />
+                    </div>
+                </div>
+
+                <div class="sellers-modal__field">
+                    <label for="user-email" class="sellers-modal__form-desc">Email</label>
+                    <input id="user-email" class="sellers-modal__input" name="user-email" type="email"
+                        placeholder="Enter your email" required pattern="" />
+                </div>
+
+                <div class="sellers-modal__field">
+                    <label for="user-tel" class="sellers-modal__form-desc">Phone number</label>
+                    <div class="sellers-modal__container-form">
+                        <input id="user-tel" class="sellers-modal__input sellers-modal__input-tel" name="user-tel"
+                            type="tel" placeholder="Phone number" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                            title="xxx-xxx-xx-xx" />
+                        <svg class="sellers-modal__icon-input">
+                            <use href="./images/sprite.svg#icon-frame"></use>
+                        </svg>
+                        <span class="sellers-modal__icon-text">+380</span>
+                    </div>
+                </div>
+
+                <div class="sellers-modal__field">
+                    <label for="user-card" class="sellers-modal__form-desc">Card number</label>
+                    <div class="sellers-modal__container-form">
+                        <input id="user-card" class="sellers-modal__input" name="user-card" type="text"
+                            placeholder="Enter card" />
+                        <svg class="sellers-modal__icon-card">
+                            <use href="./images/sprite.svg#icon-Input-right-section"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="sellers-modal__form-textarea">
+                    <label for="user-comment" class="sellers-modal__form-desc">Comment</label>
+                    <textarea id="user-comment" name="user-comment" class="sellers-modal__form-message"
+                        placeholder="Enter text"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="sellers-modal__form-submit js-modal-close">Submit</button>
+        </form>
+
+    </div>
+</div>
+<div class="overlay js-overlay-modal"></div>
