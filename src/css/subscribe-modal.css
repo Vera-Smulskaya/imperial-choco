@@ -2,9 +2,13 @@
     max-width: 538px;
     background: var(--bgc-body);
     border-radius: 15px;
-    position: relative;
+    overflow: hidden;
 }
-
+@media screen and (min-width: 768px){
+.subscribe-modal {
+    width: 538px;
+}
+}
 .subscribe-modal__content-wrapper{
     padding: 40px;
 }
@@ -24,6 +28,7 @@
     line-height: 1.17;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+    text-align: left;
     color: var(--c-text-main);
     max-width: 298px;
     margin-bottom: 28px;
@@ -31,21 +36,40 @@
 @media screen and (max-width: 767.98px){
 .subscribe-modal__title{
     max-width: 263px;
+    font-size: 20px;
+    margin-bottom: 24px;
 }
 }
 
 .subscribe-modal__title-span{
     color: var(--c-accent);
 }
-
+.subscribe-modal__form{
+    display: flex;
+}
 .subscribe-modal__form-input{
-    padding: 15px 24px;
+    padding: 14px 24px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     border-radius: 30px;
-    /* margin-right: 8px; */
+    margin-right: 8px;
+    height: 52px;
     max-width: 313px;
+    width: 100%;
     outline: transparent;
     transition: var(--transition-brd);
+}
+@media screen and (max-width: 767.98px) {
+    .subscribe-modal__form{
+        position: relative;
+        max-width: 263px;
+    }
+    .subscribe-modal__form-input{
+        width: 100%;
+    }
+    .subscribe-modal__form-input {
+        padding: 14px 18px;
+        height: 45px;
+    }
 }
 .subscribe-modal__form-input:hover,
 .subscribe-modal__form-input:focus{
@@ -58,19 +82,44 @@
     color: rgba(64, 64, 64, 0.3);
     
 }
-
+@media screen and (max-width: 767.98px){
+.subscribe-modal__form-input::placeholder{
+    font-size: 14px;
+    line-height: 1.21;
+}
+}
 .subscribe-modal__form-submit{
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
     color: var(--c-text-secondary);
-    padding: 17px 33px;
+    padding: 17px 33px 18px 32px;
     border: none;
     max-width: 137px;
     height: 52px;
+    display: block;
     background: var(--c-accent);
     border-radius: 100px;
     transition: var(--transition-c), var(--transition-bgc);
+}
+
+@media screen and (min-width: 768px) {
+.subscribe-modal__form-submit-text-mobil{
+    display: none;
+}
+}
+
+@media screen and (max-width: 767.98px){
+    .subscribe-modal__form-submit{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 14px 28px;
+        height: 45px;
+    }
+    .subscribe-modal__form-submit-text{
+        display: none;
+    }
 }
 
 .subscribe-modal__form-submit:hover,
@@ -91,9 +140,18 @@
     padding: 0;
     background-color: transparent;
     border: none;
-
+    stroke: currentColor;
+    color: var(--c-text-secondary);
+    transition: var(--transition-c);
 }
-/* .subscribe-modal__close-btn:hover,
-.subscribe-modal__close-btn:focus{
+@media screen and (max-width: 767.98px){
+.subscribe-modal__close-btn{
+    top: 21px;
+    right: 20px;
+}
+}
 
-} */
+.subscribe-modal__close-btn:hover,
+.subscribe-modal__close-btn:focus{
+    color: var(--c-accent);
+}
