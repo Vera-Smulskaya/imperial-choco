@@ -83,6 +83,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 .hero_description_btn {
     border: 1px solid #ffffff;
     background-color: transparent;
+    display: block;
+    text-align: center;
 }
 
 .hero_description_btn:hover,
