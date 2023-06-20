@@ -5,7 +5,6 @@
 .review-modal__inner {
   min-height: 628px;
   min-width: 517px;
-  /* width: 517px; */
   padding: 40px;
   background: var(--bgc-body);
   border-radius: 15px;
@@ -73,9 +72,14 @@
   border-radius: 13px;
   padding: 22px 24px;
   margin-bottom: 18px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: -0.02em;
   background-color: transparent;
   outline: transparent;
-  transition: border-color var(--transition-duration-and-func);
+  transition: var(--transition-brd);
 }
 
 .review-form__input:focus {
@@ -83,12 +87,8 @@
   border-color: var(--c-accent);
 }
 
-.review-form__input::placeholder {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: -0.02em;
+.review-form__input::placeholder,
+.review-form__message::placeholder {
   color: rgba(64, 64, 64, 0.3);
 }
 
@@ -102,7 +102,6 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: -0.02em;
-  color: rgba(64, 64, 64, 0.3);
   background-color: transparent;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
@@ -115,15 +114,6 @@
 .review-form__message:focus {
   outline: none;
   border-color: var(--c-accent);
-}
-
-.review-form__message::placeholder {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: -0.02em;
-  color: rgba(64, 64, 64, 0.3);
 }
 
 .review-form__submit {
@@ -149,8 +139,6 @@
   color: var(--c-accent);
   background-color: var(--bgc-light-button);
 }
-
-/* INPUT-EMAIL */
 
 .review-modal__container-form {
   position: relative;
