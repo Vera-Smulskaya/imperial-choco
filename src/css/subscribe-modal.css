@@ -135,8 +135,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     padding: 0;
     background-color: transparent;
     border: none;
@@ -148,6 +148,8 @@
 .subscribe-modal__close-btn{
     top: 21px;
     right: 20px;
+    width: 24px;
+    height: 24px;
 }
 }
 
