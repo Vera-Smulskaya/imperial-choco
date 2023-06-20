@@ -2,7 +2,7 @@
     overflow-y: scroll;
     width: 311px;
     height: 95%;
-    
+    max-height: 1000px;
     padding: 32px 24px;
     background-color: var(--bgc-body);
     border-radius: 15px;
