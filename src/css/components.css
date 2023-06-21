@@ -136,7 +136,7 @@ font-weight: 600;
 @media screen and (min-width:1200px) {
     .components__img {
         width: 204px;
-        min-height: 160px;
+        height: auto;
     }  
 }
 
