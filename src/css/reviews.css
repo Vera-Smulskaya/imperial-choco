@@ -6,6 +6,9 @@
   padding: 72px 0;
   overflow: hidden;
 }
+.reviews .container {
+  overflow: hidden;
+}
 .reviews__title {
   margin-bottom: 74px;
   text-transform: uppercase;
