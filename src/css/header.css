@@ -1,6 +1,5 @@
 .header {
   position: sticky;
-  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
   top: 0;
   left: 0;
   background-color: var(--bgc-body);
@@ -127,7 +126,8 @@
 .head-menu-item::after {
   content: '';
   background-color: transparent;
-  transition: var(--transition-bgc);
+  width: 0;
+  transition: var(--transition-bgc), width 250ms linear;
 }
 .head-menu-item:hover::after,
 .head-menu-item:focus::after {
@@ -242,8 +242,9 @@
   }
   .header-list-item::after {
     content: '';
+    width: 0%;
     background-color: transparent;
-    transition: var(--transition-bgc);
+    transition: var(--transition-bgc), width 250ms linear;
   }
   .header-list-item:hover::after,
   .header-list-item:focus::after {

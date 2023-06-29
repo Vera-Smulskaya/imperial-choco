@@ -19,9 +19,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 28px;
-  height: 28px;
-  padding: 7px;
+    width: 30px;
+    height: 30px;
   cursor: pointer;
   color: var(--c-text-main);
   background-color: transparent;
@@ -39,8 +38,8 @@
 .review-modal__icon {
   display: block;
   stroke: currentColor;
-  width: 14px;
-  height: 14px;
+  width: 24px;
+  height: 24px;
 }
 
 .review-modal__title {
